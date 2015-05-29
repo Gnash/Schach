@@ -27,7 +27,7 @@ public class IntroState extends BasicGameState {
 	@Override
 	public void render(GameContainer container, StateBasedGame game, Graphics g)
 			throws SlickException {
-		g.drawString("PENIS", 300, 300);
+		g.drawString("Test", 300, 300);
 		
 	}
 

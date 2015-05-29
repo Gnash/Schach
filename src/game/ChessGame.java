@@ -13,7 +13,7 @@ public class ChessGame extends StateBasedGame {
 	
 	@Override
 	public void initStatesList(GameContainer container) throws SlickException {
-		addState(new IntroState(0));
-		addState(new MainState(1));
+//		addState(new IntroState(0));
+		addState(new MainState(0));
 	}
 }

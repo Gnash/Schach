@@ -1,7 +1,6 @@
-package game;
+package players;
 
 import pieces.PieceColor;
-import players.IPlayer;
 
 public class HumanPlayer implements IPlayer {
 
@@ -25,8 +24,7 @@ public class HumanPlayer implements IPlayer {
 
 	@Override
 	public boolean isHuman() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 }

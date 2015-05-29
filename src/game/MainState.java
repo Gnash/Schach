@@ -10,10 +10,10 @@ import org.newdawn.slick.state.StateBasedGame;
 import pieces.IPiece;
 import pieces.PieceColor;
 import players.EasyBot;
+import players.HumanPlayer;
 import players.MediumBot;
 import processes.PieceMoveProcess;
 import processes.ProcessManager;
-
 import board.Board;
 import board.IBoard;
 import board.ISquare;
@@ -37,9 +37,10 @@ public class MainState extends BasicGameState {
 			throws SlickException {
 		ResourceManager.loadPieces();
 		ResourceManager.loadBoard();
-		board.setPlayer(PieceColor.BLACK, new MediumBot(PieceColor.BLACK, board, processManager));
-		board.setPlayer(PieceColor.WHITE, new MediumBot(PieceColor.WHITE, board, processManager));
-//		board.setPlayer(PieceColor.WHITE, new HumanPlayer());
+//		board.setPlayer(PieceColor.BLACK, new MediumBot(PieceColor.BLACK, board, processManager));
+//		board.setPlayer(PieceColor.WHITE, new MediumBot(PieceColor.WHITE, board, processManager));
+		board.setPlayer(PieceColor.WHITE, new HumanPlayer());
+		board.setPlayer(PieceColor.BLACK, new HumanPlayer());
 	}
 
 	@Override
